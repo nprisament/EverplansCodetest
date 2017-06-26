@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Noah Prisament -- nprisament@gmail.com -- Hastings-on-Hudson, NY, USA
+
+# THANKS
+
+    Everplans
+
+#SITE
+
+	Last update: 2017/05/24
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr, Bootstrap, html5boilerplate
+
+    Software: Sublime Text, npm

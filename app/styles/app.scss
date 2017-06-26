@@ -1,0 +1,44 @@
+.event {
+	background-image: url('../assets/banner.jpg'); 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+	.small {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.large {
+		display: none !important;
+	}
+}
+
+@media (min-width: 768px){
+    .cell-box:nth-child(2n+1){
+        clear: both;
+        /* background-color: rgba(0, 0, 255, .5); /* blue */
+    }
+}
+@media (min-width: 992px){
+    .cell-box:nth-child(2n+1){
+        clear: none;
+    }
+
+    .cell-box:nth-child(3n+1){
+        clear: both;
+        /* background-color: rgba(0, 255, 0, .5); /* green */
+    }
+}
