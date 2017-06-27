@@ -24,6 +24,7 @@ module.exports = {
     alias: {
       Main: 'app/components/Main.jsx',
       EventModal: 'app/components/EventModal.jsx',
+      InviteModal: 'app/components/InviteModal.jsx',
       Header: 'app/components/Header.jsx',
       Event: 'app/components/Event.jsx',
       Navigation: 'app/components/Navigation.jsx',

@@ -4,68 +4,8 @@ import { Row, Col, Button } from 'react-bootstrap';
 const Person = require('Person');
 
 module.exports = React.createClass({
-  getInitialState() {
-    return {
-      people: [
-        {
-          id: 1,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 2, 
-          pictureAddress: 'Warren.jpg',
-          response: true,
-          coming: true
-        }, 
-        {
-          id: 2,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 1, 
-          pictureAddress: 'Warren.jpg',
-          response: true,
-          coming: true
-        },
-        {
-          id: 3,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 3, 
-          pictureAddress: 'Warren.jpg',
-          response: true,
-          coming: true
-        },
-        {
-          id: 4,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 0, 
-          pictureAddress: 'Warren.jpg',
-          response: true,
-          coming: false
-        },
-        {
-          id: 5,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 0, 
-          pictureAddress: 'Warren.jpg',
-          response: true,
-          coming: false
-        },
-        {
-          id: 6,
-          firstName: 'Warren', 
-          lastInitial: 'H', 
-          guestsNum: 0, 
-          pictureAddress: 'Warren.jpg',
-          response: false,
-          coming: true
-        },
-      ]
-    };
-  },
   render() {
-    const {people} = this.state;
+    const {people} = this.props;
     const noResponse = people.filter((person) => {
       return person.response == false;
     });
@@ -95,7 +35,7 @@ module.exports = React.createClass({
               Who's Coming ({coming.length})
             </div>
             <div className="pull-right">
-              <Button>Invite More People</Button>
+              <Button onClick={this.props.onInvite}>Invite More People</Button>
             </div>
           </h4>
         </div>
